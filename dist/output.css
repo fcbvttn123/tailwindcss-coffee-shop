@@ -590,8 +590,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .ml-7 {
@@ -612,10 +612,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .flex {
