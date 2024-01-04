@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="custom.css">
     <script src="script.js" defer></script>
 </head>
 <body class="font-serif">
@@ -40,13 +41,14 @@
         </div>
     </div>
     <!-- Section -->
-    <div class="relative h-auto">
-        <img class="w-full" src="./images/hero.webp" alt="" srcset="">
-        <div class="absolute top-12 left-20">
-            <h1 class="text-white text-8xl tracking-wider">FOR THE LOVE</h1>
-            <h1 class="text-white text-8xl mt-4 tracking-wider">OF COFFEE</h1>
+    <div class="relative h-128 bg-red-500 bg-cover bg-no-repeat bg-center hero-image-link">
+        <div class="absolute top-12 left-20 phone1000:top-10 phone1000:left-8 text-white text-8xl tracking-wider phone890:text-6xl phone890:left-5">
+            <h1>FOR THE LOVE</h1>
+            <h1 class="mt-4">OF COFFEE</h1>
         </div>
-        <button class="absolute bottom-32 right-28 text-black bg-amber-100 text-5xl px-12 py-7 border border-black hover:bg-lime-700 hover:text-amber-100 transition-all duration-500">Shop Blends</button>
+        <button class="absolute bottom-32 right-28 text-black bg-amber-100 text-5xl px-12 py-7 border border-black hover:bg-lime-700 hover:text-amber-100 transition-all duration-500  phone890:right-1/2 phone890:p-4 phone890:text-base phone890:translate-x-2/4 phone890:w-4/5 phone890:bottom-5">
+            Shop Blends
+        </button>
     </div>
     <!-- Section -->
     <div class="w-full py-28">
@@ -170,5 +172,13 @@
 <!-- 
 
     Template: https://www.wix.com/website-template/view/html/3215?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=873ae121-3e06-45f9-ae33-77f2e416338c
+
+    Issues: 
+
+        + Slider 
+
+        + RWD for hero section
+
+        + Menu Button Function
 
  -->
