@@ -2,7 +2,19 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        128: "30rem"
+      }
+    },
+    screens: {
+      phone890: {
+        max: "890px"
+      },
+      phone1000: {
+        max: "1000px"
+      }
+    }
   },
   plugins: [],
 }
