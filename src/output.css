@@ -699,8 +699,8 @@ video {
   width: 91.666667%;
 }
 
-.w-2\/5 {
-  width: 40%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-3\/5 {
@@ -721,10 +721,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .-translate-y-2\/4 {
@@ -1042,8 +1038,33 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .phone890\:flex-col {
+    flex-direction: column;
+  }
+
+  .phone890\:items-center {
+    align-items: center;
+  }
+
+  .phone890\:gap-y-4 {
+    row-gap: 1rem;
+  }
+
+  .phone890\:gap-y-8 {
+    row-gap: 2rem;
+  }
+
+  .phone890\:gap-y-12 {
+    row-gap: 3rem;
+  }
+
   .phone890\:p-4 {
     padding: 1rem;
+  }
+
+  .phone890\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .phone890\:text-6xl {
@@ -1054,31 +1075,6 @@ video {
   .phone890\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .phone890\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .phone890\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .phone890\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .phone890\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .phone890\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
