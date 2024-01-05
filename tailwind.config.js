@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       height: {
         128: "70vh"
+      }, 
+      minWidth: {
+        '25%': '25%',
       }
     },
     screens: {
