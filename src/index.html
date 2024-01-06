@@ -89,38 +89,46 @@
     <!-- Section -->
     <img src="./images/c837a6_6d76103ea529451fbe00ee270c1f59ea~mv2.webp" alt="">
     <!-- Section -->
-    <div class="flex flex-col items-center justify-center py-20 bg-neutral-100">
+    <div class="flex flex-col items-center justify-center gap-y-10 py-20 bg-neutral-100">
         <h1 class="text-4xl text-center">DELIVERED FRESH</h1>
-        <div class="flex items-center justify-between gap-x-4 w-full bg-red-500">
-            <span class="material-symbols-outlined text-black">arrow_back_ios</span>
-            <div class="flex flex-row items-stretch justify-between w-full overflow-hidden" data-product-box>
-                <div class="min-w-25% bg-blue-300">d</div>
-                <div class="min-w-25% bg-red-300">d</div>
-                <div class="min-w-25% bg-green-300">d</div>
-                <div class="min-w-25% bg-yellow-300">d</div>
-                <div class="min-w-25% bg-purple-300">d</div>
+        <div class="flex items-center w-full">
+            <span class="material-symbols-outlined text-black cursor-pointer hover:opacity-70" data-arrow-back-icon>arrow_back_ios</span>
+            <div class="w-full overflow-hidden">
+                <div class="flex w-full transition-all" data-product-box>
+                    <div class=" grow-0 shrink-0 basis-3/12" data-carousel-item>
+                        <div class="flex flex-col items-start justify-between">
+                            <img src="./images/blend1.webp" alt="" srcset="">
+                            <p class="mt-5 mb-3">Blend 01</p>
+                            <p class="text-gray-400">$85.00</p>
+                        </div>
+                    </div>
+                    <div class="grow-0 shrink-0 basis-3/12" data-carousel-item>
+                        <div class="flex flex-col items-start justify-between">
+                            <img src="./images/blend2.webp" alt="" srcset="">
+                            <p class="mt-5 mb-3">Blend 02</p>
+                            <p class="text-gray-400">$95.00</p>
+                        </div>
+                    </div>
+                    <div class="grow-0 shrink-0 basis-3/12" data-carousel-item>
+                        <div class="flex flex-col items-start justify-between">
+                            <img src="./images/blend3.webp" alt="" srcset="">
+                            <p class="mt-5 mb-3">Blend 03</p>
+                            <p class="text-gray-400">$70.00</p>
+                        </div>
+                    </div>
+                    <div class="grow-0 shrink-0 basis-3/12" data-carousel-item>
+                        <div class="flex flex-col items-start justify-between">
+                            <img src="./images/blend4.webp" alt="" srcset="">
+                            <p class="mt-5 mb-3">Blend 04</p>
+                            <p class="text-gray-400">$91.00</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-300 grow-0 shrink-0 basis-3/12" data-carousel-item>d</div>
+                    <div class="bg-red-300 grow-0 shrink-0 basis-3/12" data-carousel-item>d</div>
+                    <div class="bg-blue-300 grow-0 shrink-0 basis-3/12" data-carousel-item>d</div>
+                </div>
             </div>
-            <!-- <div class="flex flex-col items-start justify-between">
-                <img src="./images/blend1.webp" alt="" srcset="">
-                <p class="mt-5 mb-3">Blend 01</p>
-                <p class="text-gray-400">$85.00</p>
-            </div>
-            <div class="flex flex-col items-start justify-between">
-                <img src="./images/blend2.webp" alt="" srcset="">
-                <p class="mt-5 mb-3">Blend 01</p>
-                <p class="text-gray-400">$85.00</p>
-            </div>
-            <div class="flex flex-col items-start justify-between">
-                <img src="./images/blend3.webp" alt="" srcset="">
-                <p class="mt-5 mb-3">Blend 01</p>
-                <p class="text-gray-400">$85.00</p>
-            </div>
-            <div class="flex flex-col items-start justify-between">
-                <img src="./images/blend4.webp" alt="" srcset="">
-                <p class="mt-5 mb-3">Blend 01</p>
-                <p class="text-gray-400">$85.00</p>
-            </div> -->
-            <span class="material-symbols-outlined text-black" data-arrow-forward-icon>arrow_forward_ios</span>
+            <span class="material-symbols-outlined text-black cursor-pointer hover:opacity-70" data-arrow-forward-icon>arrow_forward_ios</span>
         </div>
         <button class="text-black bg-amber-100 text-5xl px-24 py-7 border border-black hover:bg-lime-700 hover:text-amber-100 transition-all duration-500">Shop All</button>
     </div>
