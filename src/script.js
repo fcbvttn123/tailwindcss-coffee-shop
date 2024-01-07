@@ -50,3 +50,22 @@ function updateSlider() {
     const translateValue = -currentIndex * (100 / itemsToShow);
     carousel.style.transform = `translateX(${translateValue}%)`;
 }
+
+
+
+
+// Menu
+
+let mobileMenuHTMLElement = document.querySelector("[data-mobile-menu]")
+let openMenuIconHTMLElement = document.querySelector("[data-open-menu-icon]")
+let closeMenuIconHTMLElement = document.querySelector("[data-close-menu-icon]")
+
+openMenuIconHTMLElement.addEventListener("click", e => {
+    mobileMenuHTMLElement.style.display = "block"
+    mobileMenuHTMLElement.style.animationName = "show-mobile-menu"
+})
+
+closeMenuIconHTMLElement.addEventListener("click", e => {
+    mobileMenuHTMLElement.style.animationName = "hide-mobile-menu"
+    mobileMenuHTMLElement.style.display = "none"
+})
