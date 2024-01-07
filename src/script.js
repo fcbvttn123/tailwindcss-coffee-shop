@@ -1,3 +1,5 @@
+// Email Input Animation
+
 let emailInput = document.querySelector("input[type='email']")
 
 emailInput.addEventListener("focusout", e => {
@@ -14,35 +16,37 @@ emailInput.addEventListener("focusout", e => {
 
 
 
+// Carousel
+
 let forwardIcon = document.querySelector("[data-arrow-forward-icon]")
 let backIcon = document.querySelector("[data-arrow-back-icon]")
 let carousel = document.querySelector("[data-product-box]")
 let carouselItemsHTMLElement = document.querySelectorAll("[data-carousel-item]")
 
-let visibleCarouselItems = 4
-let newCarouselItemComingIn = visibleCarouselItems
-let carouselItemTotal = carouselItemsHTMLElement.length
-let transformPercent = 0
+let currentIndex = 0;
+let itemsToShow = window.innerWidth <= 890 ? 1 : 4;
 
-forwardIcon.addEventListener("click", e => {
-    newCarouselItemComingIn += 1
-    if(newCarouselItemComingIn > carouselItemTotal) {
-        newCarouselItemComingIn = newCarouselItemComingIn - 1
-        return
+window.addEventListener("resize", e => {
+    if(window.innerWidth <= 890) {
+        itemsToShow = 1
     }
-    transformPercent += (-100 / visibleCarouselItems)
-    moveCarousel(transformPercent)
 })
 
-backIcon.addEventListener("click", e => {
-    if(transformPercent == 0) {
-        return
+forwardIcon.addEventListener("click", (e) => {
+    if (currentIndex < carouselItemsHTMLElement.length - itemsToShow) {
+        currentIndex++;
+        updateSlider();
     }
-    newCarouselItemComingIn -= 1
-    transformPercent += (100 / visibleCarouselItems)
-    moveCarousel(transformPercent)
-})
+});
 
-function moveCarousel(transformPercent) {
-    carousel.style.transform = `translateX(${transformPercent}%)`
+backIcon.addEventListener("click", (e) => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
+});
+
+function updateSlider() {
+    const translateValue = -currentIndex * (100 / itemsToShow);
+    carousel.style.transform = `translateX(${translateValue}%)`;
 }
