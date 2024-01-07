@@ -2,6 +2,24 @@
     background-image: url("./images/hero.webp");
 }
 
+.fade-in.view {
+    animation: fade-in-drop-90px linear forwards;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 35%;
+}
+
+.appear-from-right {
+    animation: appear-from-right linear forwards;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 35%;
+}
+
+.appear-from-left {
+    animation: appear-from-left linear forwards;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 35%;
+}
+
 .fade-in {
     animation: .3s linear forwards;
 }
@@ -25,7 +43,7 @@
 
 @keyframes fade-in-drop {
     from {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
         opacity: 0;
     }
     to {
@@ -33,3 +51,33 @@
         opacity: 1;  
     }
 }
+
+@keyframes fade-in-drop-90px {
+    from {
+        transform: translateY(-90px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;  
+    }
+}
+
+@keyframes appear-from-right {
+    from {
+        transform: translateX(90px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear-from-left {
+    from {
+        transform: translateX(-90px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
